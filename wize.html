@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>WIZE NETWORK</title>
+
+    <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="sage/css-css" href="css/main-8b97b724f0.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/jetpack.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/wize.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body class="page-template-default page page-id-6 projects sidebar-primary">
+
+    <header>
+        <div class="header">
+            <progress id="progress" value="0"></progress>
+            <div class="custom-container">
+                <div class="row">
+                    <div class="col-xs-6 offset-xs-3 col-md-4 offset-md-4 col-lg-2 offset-lg-0 logo">
+                        <a href="index.html">
+                            <img src="image/logo.png" alt=""> <!--DISINI LOGO-->
+                        </a>
+                    </div>
+                    <div class="col-lg-10 hidden-md-down">
+                        <nav class="nav-primary pull-xs-right text-uppercase">
+                            <a class="galery" href="galery.html">Galery</a>
+                            <a class="wize-net" href="wize.html">Wize Network</a>
+                            <a class="about" href="about.html">About</a>
+                            <a class="nav-projects" href="project.html">Projects</a>
+                            <a class="contact" href="contact.html">Contact Us</a>
+                        </nav>
+                    </div>
+                    <div class="col-xs-3 col-md-4 hidden-lg-up dropdown">
+                        <button class="dropdown-btn pull-xs-right" type="button">
+                            <img class="menu img-fluid" src="image/m-menu.png">
+                            <img class="menu-close img-fluid" src="image/m-menu-close.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-dropdown-menu"> <!--BUTTON DROP DOWN-->
+            <ul>
+                <li class="text-uppercase"><a class="galery" href="galery.html">Galery</a></li>
+                <li class="text-uppercase"><a class="wize-net" href="wize.html">Wize Network</a></li>
+                <li class="text-uppercase"><a class="about" href="about.html">About</a></li>
+                <li class="text-uppercase"><a class="nav-projects" href="project.html">Projects</a></li>
+                <li class="text-uppercase"><a class="contact" href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <!------------------------------------------------------------------------------------------------------------>
+    <main>
+            <div class="container">
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Cat_plotting_something_evil%21.jpg">
+                  <div class="card__head">Plotting Cat</div>
+                </div>
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/False_alarm_-a.jpg/1280px-False_alarm_-a.jpg">
+                  <div class="card__head">Angry Cat</div>
+                </div>
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Neugierige-Katze.JPG/1280px-Neugierige-Katze.JPG">
+                  <div class="card__head">Curious Cat</div>
+                </div>
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Al_acecho_%289272124788%29.jpg/1280px-Al_acecho_%289272124788%29.jpg">
+                  <div class="card__head">Prowling Cat</div>
+                </div>
+                <div class="card">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Mimi%26Tigsi.jpg/1280px-Mimi%26Tigsi.jpg">
+                  <div class="card__head">Sleepy Cat</div>
+                </div>
+              </div>
+
+    </main>
+    <!----------------------------------------------LOAD FOOTER------------------------------------------------------>
+    <div id="footer-placeholder"></div>
+    <!--------------------------------------------------------------------------------------------------------------->
+
+    <!-------------------------------------SCRIPT---------------------------------------------------->
+
+    <script>
+        // Fungsi untuk memuat konten footer
+        function loadFooter() {
+            fetch('headfoot/footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        }
+        // Panggil fungsi saat halaman dimuat
+        window.onload = function() {
+            loadFooter();
+        };
+    </script>
+    <script type="text/javascript" src="js/main-b12517ba8a.js"></script> <!--DROPDOWN SCRIPT-->
+    <!-------------------------------------SCRIPT---------------------------------------------------->
+
+</body>
+
+</html>

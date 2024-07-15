@@ -1,0 +1,121 @@
+<!-- header.html -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <title>About | Hypemaker</title>
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <script defer>
+        // Fungsi untuk memuat konten footer
+        function loadFooter() {
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        }
+
+        // Panggil fungsi saat halaman dimuat
+        window.onload = loadFooter;
+    </script>
+    <link rel="stylesheet" id="wp-block-library-css" href="css/style.min.css" type="text/css" media="all">
+    <style id="wp-block-library-inline-css" type="text/css">
+        .has-text-align-justify {
+            text-align: justify;
+        }
+    </style>
+    <link rel="stylesheet" id="contact-form-7-css" href="css/styles.css" type="text/css" media="all">
+    <link rel="stylesheet" id="sage/css-css" href="css/main-8b97b724f0.css" type="text/css" media="all">
+    <link rel="stylesheet" id="jetpack_css-css" href="css/jetpack.css" type="text/css" media="all">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate.min.js"></script>
+    <style type="text/css">
+        .recentcomments a {
+            display: inline !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <script src="js/jquery.flexslider.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function () {
+                $('.flexslider').flexslider({
+                    animation: "slide"
+                });
+            });
+        })(jQuery);
+    </script>
+</head>
+<!-- header.html -->
+<header>
+    <div class="header sticky">
+        <progress id="progress" value="0"></progress>
+        <div class="custom-container">
+            <div class="row">
+                <div class="col-xs-6 offset-xs-3 col-md-4 offset-md-4 col-lg-2 offset-lg-0 logo">
+                    <a href="index.html">
+                        <img src="image/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-10 hidden-md-down">
+                    <nav class="nav-primary pull-xs-right text-uppercase">
+                        <a class="about" href="about.html">About</a>
+                        <a class="nav-projects" href="project.html">Projects</a>
+                        <a class="contact" href="contact.html">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="col-xs-3 col-md-4 hidden-lg-up dropdown">
+                    <button class="dropdown-btn pull-xs-right" type="button">
+                        <img class="menu img-fluid" src="image/m-menu.png">
+                        <img class="menu-close img-fluid" src="image/m-menu-close.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-dropdown-menu">
+        <ul>
+            <li class="text-uppercase"><a class="about" href="about.html">About</a></li>
+            <li class="text-uppercase"><a class="nav-projects" href="project.html">Projects</a></li>
+            <li class="text-uppercase"><a class="contact" href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Script untuk header -->
+<script type="text/javascript" src="js/photon.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/main-b12517ba8a.js"></script>
+<script type="text/javascript" src="js/wp-embed.min.js"></script>
+<script type="text/javascript" src="js/e-202428.js" async="async" defer="defer"></script>
+
+<script>
+    // Contoh efek JavaScript untuk header
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownBtn = document.querySelector('.dropdown-btn');
+        const menu = document.querySelector('.custom-dropdown-menu');
+
+        dropdownBtn.addEventListener('click', function () {
+            menu.classList.toggle('open');
+        });
+    });
+</script>
